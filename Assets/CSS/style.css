@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2? family= Rajdhani:wght@300;400;500;600;700 & family= Space+Grotesk:wght@300;400;500; 600;700 & display=échange'); 
+
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../police/Rajdhani-Medium.ttf);
+}
+
+:root{
+    --yellow-color:#FFFF00; 
+    --yellow-light: #f8f184;
+    --blue-color: #19587d;
+    --white-color: #fff;
+    --gradient-white: #EDDEBF67;
+    --gradient-red: #89000978;
+    --black-color: #000;
+    --grey-color: #c4c4c4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+
+button{
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin:0 auto;
+}
+
+.ar{
+    background-color: black;
+    color: white;
+    font-family:'Space+Grotesk';
+    font-weight: 300;
+}
+
+
+
+
+/* Design de la navigation */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding: 30px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul a{
+    color:#fff ;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+    /*text-decoration: none;*/
+    /*pour enlever le soulignement */
+}
+
+nav ul a:hover{
+    color: var(--yellow-color)
+}
+
+
+
+
+/*design de la partie en tete hero */
+#hero{
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587d;
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero .titre{
+    margin: 30px;
+}
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 40px;
+    background: linear-gradient(
+        100deg,var(--gradient-white),var(--gradient-red)
+    );
+    box-shadow: var(--black-color)5px 5px 60px;
+}
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 290px;
+}
+
+
+
+
+/** logo sur les reseaus sociaux */
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 60px;
+    top: 200px;
+}
+
+.scroll .scl{
+        margin-top: 20px;
+}   
+
+
+
+
+
+/** design la deuxième section BATMAN AU CINÉMA */
+/*
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#BATMAN-CINEMA .titre{
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+#BATMAN-CINEMA .description{
+    margin-bottom: 60px;
+    text-align: justify;
+    width: 80%;
+    font-size: 20px;
+}
+
+#BATMAN-CINEMA .batman-personnage{
+    margin-bottom: 50px;
+}
+
+#BATMAN-CINEMA .prs{
+    text-align: center;
+}   */
+
+
+
+
+
+/** design la troisième section NÉMÉSIS  */
+/*
+.nemesis-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#NEMESIS .titre{
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+#NEMESIS .description{
+    margin-bottom: 60px;
+    text-align: justify;
+    width: 80%;
+    font-size: 20px;
+}
+#NEMESIS .nemesis-personnage{
+    margin-bottom: 50px;
+}
+
+#NEMESIS .prs{
+    text-align: center;
+}   */
+
+
+
+
+
+
+
+
+
+/** design de la quatrieme section alliée */
+/*
+.alliée-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ALLIES .titre{
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+#ALLIES .description{
+    margin-bottom: 60px;
+    text-align: justify;
+    width: 80%;
+    font-size: 20px;
+}
+#ALLIES .nemesis-personnage{
+    margin-bottom: 50px;
+}
+
+#ALLIES .prs{
+    text-align: center;
+}    */
+
+
+
+/**design de la cinquième section JUSTICE LEAGUE */
+/*
+#JUSTICE .titre{
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+#JUSTICE .description{
+    margin-bottom: 60px;
+    text-align: justify;
+    width: 80%;
+    font-size: 20px;
+}    */
+
+
+/** Assemblage des sections */
+.batman-personnage, .nemesis-personnage, .alliée-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#BATMAN-CINEMA .titre, #NEMESIS .titre, #ALLIES .titre, #JUSTICE .titre{
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+#BATMAN-CINEMA .description, #NEMESIS .description, #ALLIES .description, #JUSTICE .description{
+    margin-bottom: 60px;
+    text-align: justify;
+    width: 80%;
+    font-size: 20px;
+}
+
+#BATMAN-CINEMA .batman-personnage, #NEMESIS .nemesis-personnage, #ALLIES .nemesis-personnage{
+    margin-bottom: 50px;
+}
+
+#BATMAN-CINEMA .prs, #NEMESIS .prs, #ALLIES .prs{
+    text-align: center;
+}
+
+
+/** design de la partie multimetia */
+#MULTIMÉDIA button{
+    position: relative;
+    top: 170px;
+    background: none;
+    border: none;
+}
+#MULTIMÉDIA button.right{
+    right: -90%;
+}
+
+#MULTIMÉDIA .slider-multimedia{
+     display: flex;
+     width: 60%;
+     margin: 40px auto;
+}
+ 
+#MULTIMÉDIA .slider-image{
+    width: 100%;
+}
+
+#MULTIMÉDIA .slider-content{
+    padding: 15px;
+    background-color: #c4c4c4;
+    /*border-radius: 20px;*/
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#MULTIMÉDIA .yellow{
+    color: #FFFF00;
+}
+
+
+
+/**design de la partie contacte */
+#contact{
+    background-color: darkslategrey;
+    padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+#contact .titre{
+    display: block;
+    margin: 28px 0;
+}
+#contact .form input[type='email'], textarea, .news{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    background-color: transparent;
+    padding: 5px 0;
+}
