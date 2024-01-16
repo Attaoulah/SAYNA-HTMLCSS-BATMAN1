@@ -75,6 +75,9 @@ nav ul a:hover{
     color: var(--yellow-color)
 }
 
+.logos:hover{
+    filter: invert(9%) sepia(92%) saturate(5994%) hue-rotate(355deg) brightness(105%) contrast(104%);
+}
 
 
 
@@ -330,7 +333,7 @@ nav ul a:hover{
     display: block;
     margin: 28px 0;
 }
-#contact .form input[type='email'], textarea, .news{
+#contact .form input[type='email']{
     display: block;
     border-top: none;
     border-right: none;
@@ -338,5 +341,117 @@ nav ul a:hover{
     width: 80%;
     border-bottom: 2px solid rgb(120, 120, 120);
     background-color: transparent;
-    padding: 5px 0;
+    padding: 10px 0;
+}
+#contact .form textarea {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .form .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(120, 120, 120);
+}
+
+::-webkit-input-placeholder{
+    color:#f8f184;
+    font-size: 15px;
+}
+
+::placeholder{
+    color:#f8f184;
+    font-size: 15px;
+}
+
+::-moz-placeholder{
+    color:#f8f184;
+    font-size: 15px;
+}
+
+:-ms-input-placeholder{
+    color:#f8f184;
+    font-size: 15px;
+}
+
+.btn-group{
+padding: 10px;
+display: flex;
+justify-content: space-around;
+}
+
+.form input[type='radio']{
+opacity: 0;
+}
+
+.btn-group label{
+cursor: pointer ;
+padding: 10px;
+border: 2px solid;
+border-image: linear-gradient(
+69deg, red,blue 
+    )1;
+font-size: 20px;    
+}
+ input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+#citations{
+    margin: 90px;
+} 
+
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Rajdhani';
+}
+
+#citations .citation-auteur{
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: 'Rajdhani';
+    opacity: 0.5; /* Valeur entre 0 (transparent) et 1 (opaque) */            
+}
+
+#citations .guillmet-close{
+    float: right;
+}
+
+/** design footer */
+footer{
+    margin-top: 200px;
+}
+
+footer .text-footer, .social-footer{
+    text-align: center;
+    font-size: 12px;
+}
+
+footer .social-footer{
+    text-align: center;
+    font-size: 12px;
+    margin: 50px;
+}
+
+footer .social-item{
+    padding: 15px;
+}
+
+.up-bar{
+    border-top: #c4c4c4 50px solid;
 }
